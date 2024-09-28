@@ -2058,6 +2058,12 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+@media (max-width: 767.98px) {
+  .card-phrase-margin {
+    margin-bottom: 1em !important;
+  }
+}
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;

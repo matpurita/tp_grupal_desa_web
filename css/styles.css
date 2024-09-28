@@ -50,7 +50,13 @@
     height: 350px;
     object-fit: contain;
     width: 100%;
+}
 
+.nosotros-img-card {
+    object-fit: contain;
+    width: 100%;
+    padding-block: 1em;
+    padding-inline: 1em;
 }
 
 .bg-grey {
@@ -83,6 +89,12 @@
 .containersoporte{
     display: flex;
    
+}
+
+@media (max-width: 767.98px) {
+  .card-phrase-margin {
+    margin-bottom: 1em !important;
+  }
 }
 
 .img-footer-container {
