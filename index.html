@@ -1,86 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Inicio - U-DEVS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Inicio - U-DEVS</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <div class="container">
-        <a class="navbar-brand" href="./">
-          <div class="logo-container">
-            <img src="./img/udevs-logo.png" alt="Logo" class="img-fluid">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container">
+          <a class="navbar-brand" href="./">
+            <div class="logo-container">
+              <img src="./img/udevs-logo.png" alt="Logo" class="img-fluid" />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex">
+              <li class="nav-item">
+                <span class="nav-link active">Inicio</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./support.html">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex">
-            <li class="nav-item">
-              <a class="nav-link" href="./">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./support.html">Soporte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./contact.html">Contacto</a>
-            </li>
-          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container py-5">
+        <h1 class="text-center mb-4">U-DEVS</h1>
 
+        <div class="row">
+          <div class="col-md-6 col-12 order-md-1 order-2">
+            <p id="principal-title">
+              <span class="accent-color">En U-DEVS,</span> somos una empresa de
+              software innovadora dedicada a transformar ideas en soluciones
+              tecnológicas de vanguardia.
+            </p>
+            <p>
+              Nuestro equipo de expertos trabaja incansablemente para
+              desarrollar productos que no solo cumplen, sino que superan las
+              expectativas de nuestros clientes.<br />
+              Nos especializamos en una amplia gama de servicios, desde el
+              desarrollo de aplicaciones móviles y web hasta la implementación
+              de sistemas de inteligencia artificial y análisis de datos.
+              Nuestra misión es proporcionar herramientas que impulsen el
+              crecimiento y la eficiencia de las empresas en un mundo cada vez
+              más digital.
+            </p>
+
+            <div class="d-flex justify-content-center mt-4">
+              <a
+                class="w-75 btn btn-primary text-white text-decoration-none py-2"
+                href="./contact.html"
+              >
+                <i class="fas fa-envelope"></i> Contáctanos
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-12 text-center order-md-2 order-1 mb-4 mb-md-0"
+          >
+            <img
+              class="w-75 img-fluid"
+              src="./img/ai-programing.png"
+              alt="Foto"
+            />
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-8">
-        <h2>¡Bienvenido a U-DEVS!</h1>
-          <p id="principal-title"><span class="accent-color">En U-DEVS,</span> somos una empresa de software innovadora
-            dedicada a transformar ideas en soluciones tecnológicas de vanguardia.</p>
-          <p>Nuestro equipo de expertos trabaja incansablemente para desarrollar productos que no solo cumplen, sino que
-            superan las expectativas de nuestros clientes.<br>
-            Nos especializamos en una amplia gama de servicios, desde el desarrollo de aplicaciones móviles y web hasta
-            la implementación de sistemas de inteligencia artificial y análisis de datos. Nuestra misión es proporcionar
-            herramientas que impulsen el crecimiento y la eficiencia de las empresas en un mundo cada vez más digital.
-          </p>
-          <div class="my-3 d-flex">
-            <a href="#" class="text-dark mx-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+    </main>
+
+    <footer class="bg-dark text-white">
+      <div class="container mx-auto row text-center py-5">
+        <div class="col-md-9 row">
+          <div class="row col-12 order-md-last mb-3 mb-md-0">
+            <div class="col-md-12">
+              <p>
+                Todos los derechos reservados - Sitio desarrollado para uso
+                educativo - 2024
+              </p>
+            </div>
           </div>
-          <button class="btn btn-primary"><i class="fas fa-envelope"></i> Contacto</button>
-
+          <div class="row col-12 order-md-first">
+            <div class="col-md-4 col-12 mb-2 mb-md-0">
+              <p>Materia: Diseño y Desarrollo Web</p>
+            </div>
+            <div class="col-md-4 col-6">
+              <p>Curso: 492766</p>
+            </div>
+            <div class="col-md-4 col-6">
+              <p>Grupo: 14</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          <div class="img-footer-container">
+            <img
+              src="./img/logo-uade-blanco.png"
+              alt="Logo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 mt-5 mt-md-2">
-        <img src="./img/ai-programing.png" class="img-fluid" alt="Imagen">
-      </div>
-    </div>
-
+    </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
