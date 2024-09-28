@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -101,7 +101,7 @@
   width: 120px;
   max-width: 320px;
   float: left;
-  margin: 40px 15px 0px 450px;
+  margin: 10px 15px 0px 450px;
   
   
 }
@@ -112,41 +112,81 @@
   text-align: center;
   background-color: gray;
 }
+
+.contenedor{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+@media screen and (min-width: 800px){
+
+.main{
+  width: 100%;
+}
+
+aside{
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 400px){
+  .contenedor{
+    width: 100%;
+
+  }
+
+  .aside{
+    display: none;
+  }
+}
+
+
 </style>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="./">U-DEVS</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarCollapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex">
-          <li class="nav-item">
-            <a class="nav-link" href="./">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./services.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portafolio</a>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link active ">Soporte</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./contact.html">Contacto</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="./">
+          <div class="logo-container">
+            <img src="./img/udevs-logo.png" alt="Logo" class="img-fluid">
+          </div>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link active ">Soporte</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contact.html">Contacto</a>
+            </li>
+          </ul>
 
+        </div>
       </div>
-    </div>
-  </nav>
- 
+    </nav>
+  </header>
+
+
+<div class="contenedor">
   <center><h2>Soporte</h2></center>
   <div class="container">
     <center><p>En U-DEVS estamos enfocados en dar lo mejor <br>nos caracterizamos por nuestra pronta respuesta <br> y solucion a los problemas de nuestros clientes. <br>Nuestro Soporte se enfoca en los siguientes items</p></center>
@@ -161,6 +201,9 @@
   </div>
   </div>
 
+
+
+  
 <div class="item" id="soptecnico">
 <div class="wrapper">
   <img class="imgsoporte" src="img/soptecnico.jpg">
@@ -199,21 +242,44 @@
   </div>
 </div>
 </div>
+</div>
+
+
 
   
   
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
-<footer class="footersoporte">
-  <div>
-      Materia: Diseño y Desarrollo Web &nbsp; &nbsp; &nbsp; 
-      Curso: 14016 &nbsp; &nbsp; &nbsp; 
-      Grupo: 14
+<footer class="bg-dark text-white">
+  <div class="container mx-auto row text-center py-5">
+    <div class="col-md-9 row">
+      <div class="row col-12 order-md-last">
+        <div class="col-md-12">
+          <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
+        </div>
+      </div>
+      <div class="row col-12 order-md-first">
+        <div class="col-md-4 col-12">
+          <p>Materia: Diseño y Desarrollo Web</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <p>Curso: 492766</p>
+        </div>
+        <div class="col-md-4 col-6">
+          <p>Grupo: 14</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+      <div class="img-footer-container">
+        <img src="./img/logo-uade-blanco.png" alt="Logo" class="img-fluid">
+      </div>
+    </div>
   </div>
-  <div>
-      Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024
-  </div>
+ 
+
 </footer>
 
 </html>
